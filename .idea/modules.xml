@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/exercise-eureka/exercise-eureka.iml" filepath="$PROJECT_DIR$/exercise-eureka/exercise-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise-eureka-server/exercise-eureka-server.iml" filepath="$PROJECT_DIR$/exercise-eureka-server/exercise-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springcloud-exercise.iml" filepath="$PROJECT_DIR$/.idea/springcloud-exercise.iml" />
+    </modules>
+  </component>
+</project>

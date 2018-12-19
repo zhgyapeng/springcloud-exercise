@@ -1,0 +1,29 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    status-page-url: ${eureka.instance.hostname}/info
+    health-check-url: ${eureka.instance.hostname}/health
+#    hostname: localhost
+stores:
+  ribbon:
+    listOfServers: baidu.com:80,weibo.com:80
+
+ribbon:
+  eureka:
+    enabled: false
+zuul:
+  routes:
+    users:
+      path: /myusers/**
+      serviceId: myusers-service
+      stripPrefix: true
+myusers-service:
+  ribbon:
+    listOfServers: http://web20.kingdee.com/loganalysis/web/**
+feign:
+  hystrix:
+    enabled: false
